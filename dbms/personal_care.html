@@ -1,0 +1,1718 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+<link rel="icon" href="https://ld-prestashop.template-help.com/prestashop_eze_567_tf_v2/img/favicon.ico?1585572698" rel="icon" type="image/vnd.microsoft.icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+
+
+	<title>COVID</title>
+  </head>
+
+  <style type="text/css">
+  body{
+  position:relative;
+  padding:0;
+  }
+  html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+
+    * {
+      box-sizing: border-box;
+    }
+
+    /* header2 */
+    hr {
+      margin: 0;
+    }
+
+    .header2 {
+      padding-top: 2%
+    }
+
+    .header2 .path>a {
+      color: black;
+      text-decoration: none;
+    }
+
+    .header2 .path>a:hover {
+      color: #19b3bd;
+    }
+
+    .header2 .path {
+      font-size: 0.8rem;
+      padding-left: 3%;
+      margin-top:2rem;
+    }
+  #topbar{
+  height:70px;
+  background-color:#FFFFFF;
+  width:100%;
+  }
+
+  #brandName{
+  padding:2% 5% 2% 3%;
+  cursor:pointer;
+  }
+
+  #jxsearchbox-blog{
+ width:30%;
+  margin-top:2% !important;
+
+  }
+  .topbar-options{
+  float:left;
+  }
+  .custom-select{
+  border-radius:50px;
+  border-right:none;
+  height:50px ;
+  z-index:1;
+  font-size:12px;
+  padding-left:5%;
+
+  }
+  .jx_blog_search_query{
+   border-radius:50px;
+  border-left:none !important;
+  height:50px ;
+  margin-left:-30px;
+  padding-left:30px;
+  font-size:12px;
+ width:140% !important;
+  }
+.jx_blog_search_query:focus{
+
+ outline: none !important;      /* Remove default outline and use border or box-shadow */
+  box-shadow: 0 0 0 0 #CED4DA;
+  border-color:#CED4DA;
+}
+.custom-select:focus{
+  outline: none !important;      /* Remove default outline and use border or box-shadow */
+  box-shadow: 0 0 0 0 #CED4DA;
+  border-color:#CED4DA;
+}
+textarea:focus, input:focus{
+    outline: none;
+}
+#mag{
+float:left;
+margin-top:-40px;
+margin-left:150px;
+}
+.fa-search{
+color:#19B3BD;
+}
+.fa-search:hover{
+color:black;
+}
+#language-selector{
+margin-top:2% !important;
+float:right;
+margin-right:3% !important;
+}
+#setting{
+float:right;
+margin-top:2%;
+}
+.fa-cog{
+color:#19B3BD;
+}
+.fa-cog:hover{
+color:black;
+}
+#heart{
+float:right;
+margin-top:2%;
+margin-left:3%;
+}
+.fa-heart-o{
+color:#19B3BD;
+}
+.fa-heart-o:hover{
+color:black;
+}
+#user{
+float:right;
+margin-top:2%;
+margin-left:3%;
+}
+.fa-user-o{
+color:#19B3BD;
+}
+.fa-user-o:hover{
+color:black;
+}
+.fa{
+    font-size: 1.3em !important; /size whatever you like/
+}
+#shoppingKart{
+float:right;
+margin-top:2%;
+margin-left:3%;
+margin-right:4%;
+}
+.fa-shopping-cart{
+color:#19B3BD;
+}
+.fa-shopping-cart:hover{
+color:black;
+}
+
+
+
+#topMenu{
+margin-top:-22px;
+display: inline-block;
+height:50px;
+background-color:#ffffff;
+width:100%;
+float:left !important;
+margin-bottom:1%;
+}
+
+.menuitems{
+margin-top:2%;
+float:left !important;
+margin-left:3%;
+
+}
+.menulinks{
+color:black;
+font-weight:500;
+}
+.menulinks:hover{
+text-decoration:none;
+color:#52C6CE !important;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0
+}
+ul li {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+h1{
+  text-align: center;
+  margin-top: 20px;
+
+}
+.filters{
+  padding-top:40px;
+  text-align: center;
+}
+
+.filter_link {
+  color: #fff;
+  background: #59a759;
+  padding: 20px 40px;
+  border-radius: 3px;
+  margin: 10px;
+  display: inline-block;
+}
+.filter_link:active,
+.filter_link:focus,
+.filter_link:hover {
+	text-decoration:none;
+  color: #fff !important;
+  opacity: 0.8;
+}
+.cd-container:after,
+.cd-quick-view:after,
+.cd-slider-wrapper:after {
+  content: "";
+  clear: both;
+}
+.categ,
+.cd-item-info .add-to-cart,
+.cd-trigger {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.cd-trigger,
+.filter_link {
+  text-transform: uppercase;
+}
+.cd-container {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.cd-container:after {
+  display: table;
+}
+.cd-items {
+  padding: 1em 0;
+}
+.cd-item {
+  position: relative;
+  margin: 0 0 1em;
+  margin-bottom:10% !important;
+}
+
+.cd-item > img {
+  display: block;
+  width: 100%;
+}
+@media only screen and (min-width: 768px) {
+  .cd-items {
+    padding: 2em 0 0;
+  }
+  .cd-item {
+    width: 46%;
+    float: left;
+    margin: 0 4% 2em 0;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  body.overlay-layer::after {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: opacity 0.3s 0s, visibility 0s 0s;
+    -moz-transition: opacity 0.3s 0s, visibility 0s 0s;
+    transition: opacity 0.3s 0s, visibility 0s 0s;
+  }
+  .cd-items {
+    padding: 4em 0 0;
+  }
+  .cd-item {
+    width: 21%;
+    float: left;
+    margin: 0 4% 2.8em 0;
+  }
+  .cd-item:nth-child(2n) {
+    margin-right: 4%;
+  }
+  .cd-item.empty-box::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #392c3f;
+  }
+}
+.cd-trigger {
+  position: absolute;
+  height: 30%;
+  line-height: 30px;
+  width: 100%;
+  padding-top: 60%;
+  font-weight: 500;
+  font-size: 16px;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  color: #fff;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.2s, background-color 0.2s;
+  -moz-transition: opacity 0.2s, background-color 0.2s;
+  transition: opacity 0.5s, background-color 0.5s;
+}
+.no-touch .cd-trigger:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+@media only screen and (max-width: 1024px) {
+  .cd-trigger {
+    height: 30%;
+    top: 70%;
+    padding-top: 0;
+    bottom: 0;
+    visibility: visible;
+    opacity: 1;
+	padding:1%;
+	color:white !important;
+  }
+  .cd-slider li img {
+    max-width: 290px !important;
+  }
+  .cd-item-info {
+    padding: 20px 2em !important;
+  }
+}
+@media only screen and (max-width: 414px) {
+  .cd-slider li img {
+    max-width: 215px !important;
+  }
+  .cd-item-info h2 {
+    font-size: 18px;
+    font-size: 1.2rem;
+    line-height: 1.4em;
+  }
+}
+.cd-item:hover .cd-trigger {
+  visibility: visible;
+  opacity: 1 !important;
+}
+.touch .cd-item .cd-trigger {
+  opacity: 1 !important;
+}
+.cd-quick-view {
+  display: block;
+  position: fixed;
+  max-width: 900px;
+  visibility: hidden;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  will-change: left, top, width;
+  z-index: 9999;
+}
+.cd-quick-view:after {
+  display: table;
+}
+.cd-quick-view.is-visible {
+  visibility: visible;
+}
+.cd-quick-view.animate-width {
+  background-color: #fff;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+  -webkit-transition: box-shadow 0.3s;
+  -moz-transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s;
+}
+.cd-slider-wrapper {
+  position: relative;
+  display: inline-block;
+  float: left;
+}
+.cd-slider-wrapper:after {
+  display: table;
+}
+.cd-slider li {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.cd-slider li img {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+}
+.cd-slider li.selected {
+  position: relative;
+  z-index: 3;
+}
+.add-content .cd-slider {
+  margin-right: 3em;
+}
+.cd-slider-navigation {
+  opacity: 0;
+}
+.add-content .cd-slider-navigation {
+  opacity: 1;
+}
+.cd-slider-navigation li {
+  position: absolute;
+  top: 50%;
+  bottom: auto;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 3;
+}
+.cd-slider-navigation li:first-child {
+  left: 0;
+}
+.cd-slider-navigation li:last-child {
+  right: 3em;
+}
+.cd-slider-navigation li .cd-next,
+.cd-slider-navigation li .cd-prev {
+  display: block;
+  width: 40px;
+  height: 50px;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  opacity: 0;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: opacity 0.2s, background 0.2s;
+  -moz-transition: opacity 0.2s, background 0.2s;
+  transition: opacity 0.2s, background 0.2s;
+}
+.cd-slider-navigation li .cd-next::after,
+.cd-slider-navigation li .cd-next::before,
+.cd-slider-navigation li .cd-prev::after,
+.cd-slider-navigation li .cd-prev::before {
+  content: "";
+  position: absolute;
+  top: 18px;
+  left: 14px;
+  display: inline-block;
+  background: #fff;
+  height: 3px;
+  width: 12px;
+}
+.cd-slider-navigation li .cd-next::before,
+.cd-slider-navigation li .cd-prev::before {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.cd-slider-navigation li .cd-prev::after {
+  -webkit-transform: translateY(7px) rotate(-45deg);
+  -moz-transform: translateY(7px) rotate(-45deg);
+  -ms-transform: translateY(7px) rotate(-45deg);
+  -o-transform: translateY(7px) rotate(-45deg);
+  transform: translateY(7px) rotate(-45deg);
+}
+.add-content .cd-slider-navigation li .cd-next,
+.add-content .cd-slider-navigation li .cd-prev {
+  opacity: 0.8;
+  background: rgba(63, 170, 245, 0.16);
+}
+.no-touch .cd-slider-navigation li .cd-next:hover,
+.no-touch .cd-slider-navigation li .cd-prev:hover {
+  background: rgba(71, 55, 78, 0.8);
+  opacity: 1;
+}
+.touch .cd-slider-navigation li .cd-next,
+.touch .cd-slider-navigation li .cd-prev {
+  opacity: 1;
+}
+.cd-slider-navigation li:first-child .cd-next::before,
+.cd-slider-navigation li:first-child .cd-prev::before {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.cd-slider-navigation li:first-child .cd-next::after,
+.cd-slider-navigation li:first-child .cd-prev::after {
+  -webkit-transform: translateY(7px) rotate(45deg);
+  -moz-transform: translateY(7px) rotate(45deg);
+  -ms-transform: translateY(7px) rotate(45deg);
+  -o-transform: translateY(7px) rotate(45deg);
+  transform: translateY(7px) rotate(45deg);
+}
+.cd-item-info {
+  position: absolute;
+  padding: 2em 2em 0 0;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s, visibility 0s;
+  -moz-transition: opacity 0.3s, visibility 0s;
+  transition: opacity 0.3s, visibility 0s;
+}
+.cd-item-info h2 {
+  font-size: 28px;
+  font-size: 1.75rem;
+}
+.cd-item-info p {
+  line-height: 1.6;
+  margin: 1em 0;
+  color: #67919c;
+}
+.cd-item-info .cd-item-action li {
+  display: inline-block;
+  margin-right: 1em;
+}
+.cd-item-info .cd-item-action li:first-child {
+  margin-left: -4px;
+}
+.categ,
+.cd-item-info .add-to-cart {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  border-radius: 0.25em;
+  border: none;
+  padding: 0.6em 1.2em;
+  background-color: #f82f53;
+  color: #fff;
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.categ {
+  background: #3faaf5;
+}
+.add-content .cd-item-info {
+  position: relative;
+  visibility: visible;
+  opacity: 1;
+}
+.add-content .cd-item-info h2 {
+  -webkit-animation: cd-slide-in 0.3s;
+  -moz-animation: cd-slide-in 0.3s;
+  animation: cd-slide-in 0.3s;
+}
+.add-content .cd-item-info p {
+  -webkit-animation: cd-slide-in 0.4s;
+  -moz-animation: cd-slide-in 0.4s;
+  animation: cd-slide-in 0.4s;
+}
+.add-content .cd-item-info .cd-item-action {
+  -webkit-animation: cd-slide-in 0.5s;
+  -moz-animation: cd-slide-in 0.5s;
+  animation: cd-slide-in 0.5s;
+}
+@-webkit-keyframes cd-slide-in {
+  0% {
+    -webkit-transform: translate3d(-40px, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+  }
+}
+@-moz-keyframes cd-slide-in {
+  0% {
+    -moz-transform: translate3d(-40px, 0, 0);
+  }
+  100% {
+    -moz-transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes cd-slide-in {
+  0% {
+    -webkit-transform: translate3d(-40px, 0, 0);
+    -moz-transform: translate3d(-40px, 0, 0);
+    -ms-transform: translate3d(-40px, 0, 0);
+    -o-transform: translate3d(-40px, 0, 0);
+    transform: translate3d(-40px, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+.cd-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  visibility: hidden;
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: -webkit-transform 0.3s 0s, visibility 0s 0.3s;
+  -moz-transition: -moz-transform 0.3s 0s, visibility 0s 0.3s;
+  transition: transform 0.3s 0s, visibility 0s 0.3s;
+  z-index: 9999;
+}
+.cd-close::after,
+.cd-close::before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 5px;
+  display: inline-block;
+  height: 4px;
+  width: 20px;
+  background: #47374e;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.cd-close::before {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.cd-close::after {
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+.no-touch .cd-close:hover {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+}
+.add-content .cd-close {
+  visibility: visible;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: -webkit-transform 0.3s 0s, visibility 0s 0s;
+  -moz-transition: -moz-transform 0.3s 0s, visibility 0s 0s;
+  transition: transform 0.3s 0s, visibility 0s 0s;
+}
+.quick-view-content {
+  display: none;
+}
+#cd-quick-view-coverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #000;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 999;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  opacity: 0;
+  display: none;
+}
+#cd-quick-view-coverlay.overlay_active {
+  display: block;
+  opacity: 1;
+}
+.cd-close,
+.cd-slider-navigation li,
+.cd-trigger {
+  cursor: pointer;
+}
+.cd-slider {
+  float: left;
+  margin: 0;
+}
+i.fa.fa-tag::before {
+  content: "\f02b";
+  font-family: fontawesome;
+  font-style: normal;
+  margin-right: 10px;
+}
+
+#home-ref{
+color:black;
+}
+#home-ref:hover{
+color:black;
+text-decoration:none;
+}
+#ref{
+text-align:left;
+}
+.product-desp{
+color:#EA3D66;
+}
+
+
+
+#sale-tag{
+height:20px;
+width:50px;
+background-color:#E72C59;
+color:#ffffff;
+font-size:12px;
+padding-left:1px;
+transform-origin: top left;
+transform:skew(17deg,0deg);
+}
+#cost-1{
+color:#E72C59 !important;
+
+font-weight:700;
+}
+#cost1:hover{
+color:#E72C59 !important;
+}
+.maskCover {
+   width:99vw;
+   height:100%;
+   padding:0 !important;
+}
+.cen{
+ position: absolute;
+  padding-left:10%;
+padding-top:7%;
+float:left;
+}
+#packofmasks{
+color:#E74C8C;
+font-weight:400;
+}
+#packofmasks-heading{
+color:#242424;
+font-weight:700;
+font-size:250%;
+}
+#maskcost{
+color:#E72C59;
+font-weight:700;
+}
+#shopmaskButton{
+background-color:#19B3BD;
+color:#ffffff;
+font-weight:500;
+font-size:100%;
+border-radius:50px;
+padding:10px;
+padding-left:7%;
+padding-right:7%;
+margin-top:10px;
+border:5px solid #b6ecef;
+}
+#shopmaskButton:hover{
+border:5px solid #19B3BD;
+}
+#medicine1{
+max-width:100% !important;
+}
+#medicine2{
+max-width:100% !important;
+}
+#medicine3{
+max-width:100% !important;
+}
+#medicine4{
+max-width:100% !important;
+}
+
+
+
+
+.contact-info{
+margin-top:7%;
+background-color:#19B3BD;
+max-height:100%;
+}
+#mailing-list{
+color:#ffffff;
+font-weight:650;
+padding-left:5%;
+padding-top:5%;
+margin-bottom:5%;
+}
+.mailing-list{
+color:#ffffff;
+padding-left:10%;
+}
+.input-group-mail{
+border-radius:50px 0px 0px 50px !important;
+width:50%;
+height:50px;
+margin-left:3%;
+margin-left:6%;
+}
+.btn-white{
+background-color:#FFFFFF;
+margin-left:-9px;
+height:50px;
+border-radius:0px 50px 50px 0px!important;
+color:#19B3BD;
+text-transform:uppercase;
+font-weight:500;
+}
+.input-group-mail:focus{
+outline: none !important;      /* Remove default outline and use border or box-shadow */
+  box-shadow: 0 0 0 0 #CED4DA;
+  border-color:#ffffff;
+  }
+  .btn-white:focus{
+outline: none !important;      /* Remove default outline and use border or box-shadow */
+  box-shadow: 0 0 0 0 #CED4DA;
+  border-color:#ffffff;
+  }
+  .btn-white:hover{
+  color:#19B3BD;
+  background-color:#E6E6E6;
+  }
+  .icon{
+  margin-left:5%;
+  font-size: 1.3em;
+  width: 2em;
+  text-align: center;
+  line-height: 1.8em;
+ border: 2px solid #bee8ea;
+  color: #fff;
+  border-radius: 1em;
+  margin-bottom:5%;
+  }
+  .icon:hover{
+  border:2px solid #fff;
+  }
+  .icon1{
+  color:#fff;
+  border: 4px solid #bee8ea;
+  border-radius:50%;
+  padding:15% !important;
+  margin-left:7%;
+  }
+  .icn{
+  margin-left:-20px;
+  }
+  .icon1:hover{
+    border: 4px solid #fff;
+  }
+  .loc-link:hover{
+  text-decoration:none;
+  }
+  .footer-links-col1{
+  color:#242424;
+  }
+  .footer-links-col1:hover{
+  text-decoration:none;
+  color:#6FB5BD;
+  }
+  #desk-col1{
+  margin-top:13px;
+  font-size:12px;
+   text-align: justify;
+  text-justify: inter-word;
+  }
+  .slide1Pic{
+  color:#fff;
+  font-weight:500;
+  }
+ .slide2Pic{
+ color:#19B3BD;
+ font-weight:500;
+ }
+ .slide3Pic{
+ color:#19B3BD;
+ font-weight:500;
+ }
+#medicine1:hover{
+content: url('https://ld-prestashop.template-help.com/prestashop_eze_567_tf_v2/img/p/2/5/25-large_default.jpg');
+}
+#medicine2:hover{
+content: url('https://ld-prestashop.template-help.com/prestashop_eze_567_tf_v2/img/p/3/1/31-home_default.jpg');
+}
+
+#medicine3:hover{
+content: url('https://ld-prestashop.template-help.com/prestashop_eze_567_tf_v2/img/p/3/7/37-home_default.jpg');
+}
+
+#medicine4:hover{
+content: url('https://ld-prestashop.template-help.com/prestashop_eze_567_tf_v2/img/p/4/4/44-home_default.jpg');
+}
+</style>
+
+<body>
+<!--veggies=mask others=everything-->
+
+ <nav class="navbar navbar-expand-lg navbar-light bg-light d-md-none d-lg-none">
+  <a class="navbar-brand" href="#">
+  <img src="https://ld-prestashop.template-help.com/prestashop_eze_567_tf_v2/img/covid-logo-1585572698.jpg" alt="brand name"/>
+
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="homecorona.html">HOME <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="home_medicine.html">HOME MEDICINE</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="personal_care.html">PERSONAL CARE</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="health_library.html"> HEALTH LIBRARY</a>
+      </li>
+	  <li class="nav-item">
+        <a class="nav-link " href="pharmacy.html"> PHARMACY</a>
+      </li>
+
+    </ul>
+  </div>
+</nav>
+
+  <div id="topbar">
+
+
+		<div id="brandName" class="topbar-options d-md-block d-none">
+		<img src="https://ld-prestashop.template-help.com/prestashop_eze_567_tf_v2/img/covid-logo-1585572698.jpg" alt="brand name"/>
+		</div>
+
+
+
+		<div id="jxsearchbox-blog" class="topbar-options d-none d-lg-block" class="tab-pane  " role="tabpanel" aria-labelledby="blog-tab">
+        <form method="get" action="https://ld-prestashop.template-help.com/prestashop_eze_567_tf_v2/index.php?fc=module&amp;module=jxblog&amp;controller=search&amp;id_lang=1">
+
+		   <!-- SQL  REQUIRED-->
+
+		  <div class="input-group">
+            <select  name="search_blog_categories" class="custom-select">
+              <option value="0">Blog Categories</option>
+                              <option  value="2">Home</option>
+                              <option  value="3">-ECommerce Template</option>
+                              <option  value="4">-PrestaShop modules</option>
+                          </select>
+
+						   <!-- SQL  REQUIRED-->
+
+           <div id="search-1">
+            <input class="jx_blog_search_query form-control" type="text" id="jx_blog_search_query" name="blog_search_query" placeholder="Search through the blog..." value=""/>
+			<div id="mag"><i class="fa fa-search" aria-hidden="true" ></i></div>
+           </div>
+
+          </div>
+        </form>
+      </div>
+
+	   <div id="shoppingKart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></div>
+
+	  	  <div id="user"><i class="fa fa-user-o" aria-hidden="true"></i></div>
+
+	  <div id="heart"><i class="fa fa-heart-o " aria-hidden="true"></i></div>
+
+		<div id="setting"><i class="fa fa-cog " aria-hidden="true"></i></div>
+
+
+
+		<div id="language-selector" style="">
+		 <div id="google_translate_element" ></div>
+		</div>
+
+
+</div>
+
+
+
+<div id="topMenu" class="d-none d-lg-block">
+
+<div class="menuitems" >
+<a class="menulinks" href="home_medicine.html"> HOME MEDICINE</a>
+</div>
+
+
+<div class="menuitems">
+<a class="menulinks" href="personal_care.html"> PERSONAL CARE</a>
+</div>
+
+
+
+<div class="menuitems">
+<a class="menulinks" href="health_library.html"> HEALTH LIBRARY</a>
+</div>
+
+<div class="menuitems">
+<a class="menulinks" href="pharmacy.html"> PHARMACY</a>
+</div>
+
+
+</div>
+
+<div class="header2">
+
+    <p class="path"><a href="homecorona.html.html">Home</a> > Pharmacy </p>
+
+	</div>
+<h1 class="col-lg-2" style="margin-left:17px;">PHARMACY</h1>
+  <hr>
+<div class="container">
+
+  <div class="filters"><a class="filter_link" style="background: #3faaf5;" href="#" data-filter="all">All</a><a class="filter_link" href="#" data-filter="vegetables">Masks</a><a class="filter_link" style="background: #fda729;" href="#" data-filter="fruits">Others</a></div>
+
+  <ul class="cd-items cd-container">
+    <!---------------->
+    <li class="cd-item vegetables" style="display: list-item;"><a href="bildos_3_ply_ce_,iso,_gmp_certified_face_masks_with_adjustable_nose_clip_and_ultrasonic_sealed_ear_loop_with_melt_blown_layer.html"><img src="https://m.media-amazon.com/images/I/71OQ0dYw34L._AC_UL320_.jpg" alt="pack of masks" style="width:100%">
+        <div class="cd-trigger product-desp">Bildos 3 Ply CE,ISO & GMP Certified Face Masks with Adjustable Nose Clip and Ultrasonic sealed ear loop With Melt blown Layer<p>Rs 420</p>
+        </div>
+        <div class="quick-view-content">
+          <div class="quick-view-content-wrapper">
+            <div class="cd-slider-wrapper">
+              <ul class="cd-slider">
+                <li class="selected"><a href=""><img src="https://m.media-amazon.com/images/I/71OQ0dYw34L._AC_UL320_.jpg" alt="" style="width:100%"></li>
+                <li><a href=""><img src="https://m.media-amazon.com/images/I/71OQ0dYw34L._AC_UL320_.jpg" alt="" style="width:100%"></li>
+              </ul>
+              <ul class="cd-slider-navigation">
+                <li><a class="cd-next">Prev</a></li>
+                <li><a class="cd-prev">Next</a></li>
+              </ul>
+            </div>
+            <div class="cd-item-info">
+              <h2>Lorem ipsum dolor sit amet</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris malesuada, sem quis feugiat auctor, velit felis efficitur nibh, eu fringilla metus lorem at magna. Nullam aliquet lectus eu commodo sodales.</p>
+              <ul class="cd-item-action">
+                <li><a class="add-to-cart" href="#" target="_blank">Add to cart</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </li>
+
+
+    <!----------------->
+
+
+    <li class="cd-item vegetables " style="display: list-item;"><a href="nasher_miles_outdoor_washable_and_reusable_n95_face_mask.html"><img src="https://images-na.ssl-images-amazon.com/images/I/71nlwI2GetL._SL1500_.jpg" alt="compact masks" style="width:100%">
+        <div class="cd-trigger product-desp">Nasher Miles Outdoor Washable and Reusable N95 Face Mask<p>Rs 249.00</p>
+        </div>
+        <div class="quick-view-content">
+          <div class="quick-view-content-wrapper">
+            <div class="cd-slider-wrapper">
+              <ul class="cd-slider">
+                <li class="selected"><a href=""><img src="https://images-na.ssl-images-amazon.com/images/I/71nlwI2GetL._SL1500_.jpg" alt="" style="width:100%"></li>
+                <li><a href=""><img src="https://images-na.ssl-images-amazon.com/images/I/71nlwI2GetL._SL1500_.jpg" alt="" style="width:100%"></li>
+              </ul>
+              <ul class="cd-slider-navigation">
+                <li><a class="cd-next">Prev</a></li>
+                <li><a class="cd-prev">Next</a></li>
+              </ul>
+            </div>
+            <div class="cd-item-info">
+              <h2>Lorem ipsum dolor sit amet</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris malesuada, sem quis feugiat auctor, velit felis efficitur nibh, eu fringilla metus lorem at magna. Nullam aliquet lectus eu commodo sodales.</p>
+              <ul class="cd-item-action">
+                <li><a class="add-to-cart" href="#" target="_blank">Add to cart</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </li>
+
+
+    <!------------------>
+
+    <li class="cd-item fruits " style="display: list-item;"><a href="lifebuoy_total_sanitizer_250_ml.html"><img src="https://images-na.ssl-images-amazon.com/images/I/51ppBnLbDwL._SL1000_.jpg" alt="lifebouy" style="width:100%">
+        <div class="cd-trigger product-desp">Lifebuoy Total Sanitizer 250 ml<p>Rs 120.00</p>
+        </div>
+        <div class="quick-view-content">
+          <div class="quick-view-content-wrapper">
+            <div class="cd-slider-wrapper">
+              <ul class="cd-slider">
+                <li class="selected"><a href=""><img src="https://images-na.ssl-images-amazon.com/images/I/51ppBnLbDwL._SL1000_.jpg" alt="" style="width:100%"></li>
+                <li><a href=""><img src="https://images-na.ssl-images-amazon.com/images/I/51ppBnLbDwL._SL1000_.jpg" alt="" style="width:100%"></li>
+              </ul>
+              <ul class="cd-slider-navigation">
+                <li><a class="cd-next">Prev</a></li>
+                <li><a class="cd-prev">Next</a></li>
+              </ul>
+            </div>
+            <div class="cd-item-info">
+              <h2>Lorem ipsum dolor sit amet</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris malesuada, sem quis feugiat auctor, velit felis efficitur nibh, eu fringilla metus lorem at magna. Nullam aliquet lectus eu commodo sodales.</p>
+              <ul class="cd-item-action">
+                <li><a class="add-to-cart" href="#" target="_blank">Add to cart</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </li>
+
+    <!------------------>
+
+    <li class="cd-item fruits " style="display: list-item;"><a href="savlon_moisture_shield_germ_protection_liquid_handwash_refill_pouch,_750ml.html"><img src="https://images-na.ssl-images-amazon.com/images/I/61AzKeY9HjL._SX679_.jpg" alt="savlon" style="width:100%">
+        <div class="cd-trigger product-desp">Savlon Moisture Shield Germ Protection Liquid Handwash Refill Pouch, 750ml<p>Rs 95.00</p>
+        </div>
+        <div class="quick-view-content">
+          <div class="quick-view-content-wrapper">
+            <div class="cd-slider-wrapper">
+              <ul class="cd-slider">
+                <li class="selected"><a href=""><img src="https://images-na.ssl-images-amazon.com/images/I/61AzKeY9HjL._SX679_.jpgg" alt="savlon" style="width:100%"></li>
+                <li><a href=""><img src="https://images-na.ssl-images-amazon.com/images/I/61AzKeY9HjL._SX679_.jpg" alt="" style="width:100%"></li>
+              </ul>
+              <ul class="cd-slider-navigation">
+                <li><a class="cd-next">Prev</a></li>
+                <li><a class="cd-prev">Next</a></li>
+              </ul>
+            </div>
+            <div class="cd-item-info">
+              <h2>Lorem ipsum dolor sit amet</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris malesuada, sem quis feugiat auctor, velit felis efficitur nibh, eu fringilla metus lorem at magna. Nullam aliquet lectus eu commodo sodales.</p>
+              <ul class="cd-item-action">
+                <li><a class="add-to-cart" href="#" target="_blank">Add to cart</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </li>
+
+    <!------------------>
+    <li class="cd-item fruits  " style="display: list-item;"><a href="hand_pro_nitrile_powder_free_gloves_(blue,medium) _pack_of_100.html"><img src="https://m.media-amazon.com/images/I/51rRV9g1quL._AC_UL320_.jpg" style="width:100%" alt="blue gloves">
+        <div class="cd-trigger product-desp">Hand Pro Nitrile Powder-free Gloves (Blue, Medium) - Pack of 100<p>₹715 </p>
+        </div>
+        <div class="quick-view-content">
+          <div class="quick-view-content-wrapper">
+            <div class="cd-slider-wrapper">
+              <ul class="cd-slider">
+                <li class="selected"><a href=""><img src="https://m.media-amazon.com/images/I/51rRV9g1quL._AC_UL320_.jpg" style="width:100%" alt=""></li>
+                <li><a href=""><img src="https://m.media-amazon.com/images/I/51rRV9g1quL._AC_UL320_.jpg" style="width:100%" alt=""></li>
+              </ul>
+              <ul class="cd-slider-navigation">
+                <li><a class="cd-next">Prev</a></li>
+                <li><a class="cd-prev">Next</a></li>
+              </ul>
+            </div>
+            <div class="cd-item-info">
+              <h2>Lorem ipsum dolor sit amet</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris malesuada, sem quis feugiat auctor, velit felis efficitur nibh, eu fringilla metus lorem at magna. Nullam aliquet lectus eu commodo sodales.</p>
+              <ul class="cd-item-action">
+                <li><a class="add-to-cart" href="#" target="_blank">Add to cart</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </li>
+      <!--------------->
+    <li class="cd-item vegetables" style="display: list-item;"><a href="elect_store_face_shield_protection,_full_180_degree_protective_face_cover.html"><img src="https://images-na.ssl-images-amazon.com/images/I/41Mh1xMOdOL._SX425_.jpg" alt="face shield" style="width:100%">
+        <div class="cd-trigger product-desp">Elect Store Face Shield Protection, full 180 Degree Protective Face Cover<p>Rs 189</p>
+        </div>
+        <div class="quick-view-content">
+          <div class="quick-view-content-wrapper">
+            <div class="cd-slider-wrapper">
+              <ul class="cd-slider">
+                <li class="selected"><a href=""><img src="https://images-na.ssl-images-amazon.com/images/I/41Mh1xMOdOL._SX425_.jpg" alt="" style="width:100%"></li>
+                <li><a href=""><img src="https://images-na.ssl-images-amazon.com/images/I/41Mh1xMOdOL._SX425_.jpg" alt="" style="width:100%"></li>
+              </ul>
+              <ul class="cd-slider-navigation">
+                <li><a class="cd-next">Prev</a></li>
+                <li><a class="cd-prev">Next</a></li>
+              </ul>
+            </div>
+            <div class="cd-item-info">
+              <h2>Lorem ipsum dolor sit amet</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris malesuada, sem quis feugiat auctor, velit felis efficitur nibh, eu fringilla metus lorem at magna. Nullam aliquet lectus eu commodo sodales.</p>
+              <ul class="cd-item-action">
+                <li><a class="add-to-cart" href="#" target="_blank">Add to cart</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </li>
+        <!--------------->
+    <li class="cd-item fruits " style="display: list-item;"><a href="arg_health_care_ppekit_medical_disposable_protective_cover_all_suit_for_doctor.html"><img src="https://images-na.ssl-images-amazon.com/images/I/51HdZRPwVhL._SL1000_.jpg" alt="Covid suit" style="width:100%">
+        <div class="cd-trigger product-desp">ARG HEALTH CARE PPE-KIT Medical Disposable Protective Cover All Suit for Doctor<p>Rs 385.00</p>
+        </div>
+        <div class="quick-view-content">
+          <div class="quick-view-content-wrapper">
+            <div class="cd-slider-wrapper">
+              <ul class="cd-slider">
+                <li class="selected"><a href=""><img src="https://images-na.ssl-images-amazon.com/images/I/51HdZRPwVhL._SL1000_.jpg" alt="" style="width:100%"></li>
+                <li><a href=""><img src="https://images-na.ssl-images-amazon.com/images/I/51HdZRPwVhL._SL1000_.jpg" alt="" style="width:100%"></li>
+              </ul>
+              <ul class="cd-slider-navigation">
+                <li><a class="cd-next">Prev</a></li>
+                <li><a class="cd-prev">Next</a></li>
+              </ul>
+            </div>
+            <div class="cd-item-info">
+              <h2>Lorem ipsum dolor sit amet</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris malesuada, sem quis feugiat auctor, velit felis efficitur nibh, eu fringilla metus lorem at magna. Nullam aliquet lectus eu commodo sodales.</p>
+              <ul class="cd-item-action">
+                <li><a class="add-to-cart" href="#" target="_blank">Add to cart</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </li>
+
+    <!------------------>
+
+    <li class="cd-item fruits" style="display: list-item;"><a href="dettol_original_germ_protection_alcohol_based_hand_sanitizer,_50ml.html"><img src="https://images-na.ssl-images-amazon.com/images/I/51dKGvDc2qL._SX425_.jpg" alt="detol" style="width:100%">
+        <div class="cd-trigger product-desp">Dettol Original Germ Protection Alcohol based Hand Sanitizer, 50ml<p>Rs 25</p>
+        </div>
+        <div class="quick-view-content">
+          <div class="quick-view-content-wrapper">
+            <div class="cd-slider-wrapper">
+              <ul class="cd-slider">
+                <li class="selected"><a href=""><img src="https://images-na.ssl-images-amazon.com/images/I/51dKGvDc2qL._SX425_.jpg" alt="" style="width:100%"></li>
+                <li><a href=""><img src="https://images-na.ssl-images-amazon.com/images/I/51dKGvDc2qL._SX425_.jpg" alt="" style="width:100%"></li>
+              </ul>
+              <ul class="cd-slider-navigation">
+                <li><a class="cd-next">Prev</a></li>
+                <li><a class="cd-prev">Next</a></li>
+              </ul>
+            </div>
+            <div class="cd-item-info">
+              <h2>Lorem ipsum dolor sit amet</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris malesuada, sem quis feugiat auctor, velit felis efficitur nibh, eu fringilla metus lorem at magna. Nullam aliquet lectus eu commodo sodales.</p>
+              <ul class="cd-item-action">
+                <li><a class="add-to-cart" href="#" target="_blank">Add to cart</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </li>
+    <!------------------->
+    <li class="cd-item vegetables" style="display: list-item;"><a href="kkpot_protective_face_shield,_anti_splash_and_saliva_spread_safety_shield_(blue).html"><img src="https://images-na.ssl-images-amazon.com/images/I/61NPDVtoSKL._SY355_.jpg" alt="protective mask" style="width:100%">
+        <div class="cd-trigger product-desp">KKPOT Protective Face Shield, Anti Splash and Saliva Spread Safety Shield (Blue)<p>Rs 1985</p>
+        </div>
+        <div class="quick-view-content">
+          <div class="quick-view-content-wrapper">
+            <div class="cd-slider-wrapper">
+              <ul class="cd-slider">
+                <li class="selected"><a href=""><img src="https://images-na.ssl-images-amazon.com/images/I/61NPDVtoSKL._SY355_.jpg" alt="" style="width:100%"></li>
+                <li><a href=""><img src="https://images-na.ssl-images-amazon.com/images/I/61NPDVtoSKL._SY355_.jpg" alt="" style="width:100%"></li>
+              </ul>
+              <ul class="cd-slider-navigation">
+                <li><a class="cd-next">Prev</a></li>
+                <li><a class="cd-prev">Next</a></li>
+              </ul>
+            </div>
+            <div class="cd-item-info">
+              <h2>Lorem ipsum dolor sit amet</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris malesuada, sem quis feugiat auctor, velit felis efficitur nibh, eu fringilla metus lorem at magna. Nullam aliquet lectus eu commodo sodales.</p>
+              <ul class="cd-item-action">
+                <li><a class="add-to-cart" href="#" target="_blank">Add to cart</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </li>
+
+    <!---------------->
+
+    <li class="cd-item vegetables " style="display: list-item;"><a href="washable_anti_pollution_3_layer_face_mask_(pack_of_4_mask).html"><img src="https://m.media-amazon.com/images/I/41fei6uclEL._AC_UL320_.jpg" alt="compact masks" style="width:100%">
+        <div class="cd-trigger product-desp"> Washable Anti Pollution 3 Layer Face Mask (Pack Of 4 Mask)<p>₹385</p>
+        </div>
+        <div class="quick-view-content">
+          <div class="quick-view-content-wrapper">
+            <div class="cd-slider-wrapper">
+              <ul class="cd-slider">
+                <li class="selected"><a href=""><img src="https://m.media-amazon.com/images/I/41fei6uclEL._AC_UL320_.jpg" style="width:100%" alt=""></li>
+                <li><a href=""><img src=="https://m.media-amazon.com/images/I/41fei6uclEL._AC_UL320_.jpg" style="width:100%" alt=""></li>
+              </ul>
+              <ul class="cd-slider-navigation">
+                <li><a class="cd-next">Prev</a></li>
+                <li><a class="cd-prev">Next</a></li>
+              </ul>
+            </div>
+            <div class="cd-item-info">
+              <h2>Lorem ipsum dolor sit amet</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris malesuada, sem quis feugiat auctor, velit felis efficitur nibh, eu fringilla metus lorem at magna. Nullam aliquet lectus eu commodo sodales.</p>
+              <ul class="cd-item-action">
+                <li><a class="add-to-cart" href="#" target="_blank">Add to cart</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </li>
+  </ul>
+  </div>
+
+
+  <div class="container">
+
+<div class="row mt-5 d-flex justify-content-center" style="margin-top:7%">
+<h2><strong>ON SALE</strong></h2>
+</div>
+
+<div class="row mt-5">
+
+<div class="col-md-3 col-6">
+<div id="sale-tag">On Sale!</div>
+<div id="sale-tag" style="margin-top:2px;">-7%</div>
+<a href="Alka-seltzer_Original_Effervescent_Tablets_72-Count.html" id="prod-description">
+        <img href="" class="d-block col-3 img-fluid" id="medicine1" src="https://ld-prestashop.template-help.com/prestashop_eze_567_tf_v2/img/p/2/4/24-home_default.jpg">
+        <center>Alka-seltzer Original Effervescent Tablets</center>
+		<center><P id="cost-1"><span style="color:#AEAEAE; font-size:12px;"><del>Rs 490/-</del></span>  Rs 455.7/-</P></center>
+</a>
+</div>
+
+<div class="col-md-3 col-6">
+<div id="sale-tag">-20%</div>
+<a href="Best _Colon _Detox_Formula-Advanced_Colon_Detox_Supplement.html" id="prod-description">
+    <img class="d-block col-3 img-fluid" id="medicine2" src="https://ld-prestashop.template-help.com/prestashop_eze_567_tf_v2/img/p/3/0/30-home_default.jpg">
+	<center>Best Colon Detox Formula- Advance Colon Detox</center>
+	<center><P id="cost-1"><span style="color:#AEAEAE; font-size:12px;"><del>Rs 734.50/-</del></span>  Rs 587.6/-</P></center>
+</a>
+</div>
+
+<div class="col-md-3 col-6">
+<div id="sale-tag">-20%</div>
+<a href="Garden_of_Life_RAW_Enzymes(TM)_Men_90_Capsules.html" id="prod-description">
+	<img class="d-block col-3 img-fluid" id="medicine3" src="https://ld-prestashop.template-help.com/prestashop_eze_567_tf_v2/img/p/3/6/36-home_default.jpg">
+    <center>Garden Of Life RAW Enzymes(TM)  Men 90 Capsules</center>
+	<center><P id="cost-1"><span style="color:#AEAEAE; font-size:12px;"><del>Rs 2056.60/-</del></span>  Rs 1645.28/-</P></center>
+
+</a>
+</div>
+
+<div class="col-md-3 col-6">
+<div id="sale-tag">-20%</div>
+<a href="Herb_Pharm_Stone_Breaker.html" id="prod-description">
+    <img class="d-block col-3 img-fluid" id="medicine4" src="https://ld-prestashop.template-help.com/prestashop_eze_567_tf_v2/img/p/4/3/43-home_default.jpg">
+    <center>Herb Pharm Stone Breaker(Chanca Piedra)</center>
+	<center><P id="cost-1"><span style="color:#AEAEAE; font-size:12px;"><del>Rs 881.4/-</del></span>  Rs 705.12/-</P></center>
+
+</a>
+</div>
+
+</div>
+
+</div>
+  
+  
+
+
+
+  <div class="container-flex">
+<div class="contact-info">
+
+<div class="row no-gutters">
+<div class="col-md-6 col-lg-6">
+<h3 id="mailing-list">JOIN OUR MAILING LIST</H3>
+</div>
+</div>
+
+<div class="row no-gutters">
+
+<div class="col-md-6 col-lg-2">
+<p class="mailing-list">You may unsubscribe at any moment. For that purpose, please find our contact info in the legal notice.</p>
+</div>
+
+
+<div class="col-12 col-md-6 mt-3 col-lg-5 mt-md-0">
+        <form action="" method="post">
+
+		 <!-- SQL  REQUIRED-->
+
+      <div class="input-group input-group-mail">
+        <input
+                class="form-control input-group-mail"
+                name="email"
+                type="email"
+                value=""
+                placeholder="Your e-mail"
+                aria-labelledby="block-newsletter-label"
+        >
+        <input type="hidden" name="action" value="0">
+
+        <div class="input-group-append">  <!-- SQL  REQUIRED-->
+          <input
+                  class="btn btn-white"
+                  name="submitNewsletter"
+                  type="submit"
+                  value="Subscribe"
+          >
+        </div>
+      </div>
+
+          </form>
+  </div>
+
+
+
+<div class="col-lg-1 d-none d-lg-block icn" id="facebook"><i class="fa icon1 fa-facebook" aria-hidden="true"></i></div>
+<div class="col-lg-1 d-none d-lg-block icn" id="twitter"><i class="fa icon1 fa-twitter" aria-hidden="true"></i></div>
+<div class="col-lg-1 d-none d-lg-block icn" id="youtube"><i class="fa icon1 fa-youtube" aria-hidden="true"></i></div>
+<div class="col-lg-1 d-none d-lg-block icn" id="googleplus"><i class="fa icon1 fa-google-plus" aria-hidden="true"></i></div>
+<div class="col-lg-1 d-none d-lg-block icn" id="instagram"><i class="fa icon1 fa-instagram" aria-hidden="true"></i></div>
+
+
+
+</div>
+
+<div class="row no-gutters d-flex justify-content-center mt-5 d-lg-none">
+
+<div class="column icon" id="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+<div class="column icon" id="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></div>
+<div class="column icon" id="youtube"><i class="fa fa-youtube" aria-hidden="true"></i></div>
+<div class="column icon" id="googleplus"><i class="fa fa-google-plus" aria-hidden="true"></i></div>
+<div class="column icon" id="instagram"><i class="fa fa fa-instagram" aria-hidden="true"></i></div>
+
+</div>
+</div>
+</div>
+
+<div class="container d-lg-none">
+
+<div class="row no-gutters d-flex justify-content-center mt-5">
+<img src="https://ld-prestashop.template-help.com/prestashop_eze_567_tf_v2/img/covid-logo-1585572698.jpg" alt="CoronaV"/>
+</div>
+
+<div class="row no-gutters d-flex justify-content-center mt-3"  style="font-size:12px !important;">
+<p><center>The mission of our store is to: provide all the necessary products needed exclusively during COVID-19 with easy.  We want to make vegan the new normal by providing an easy and convenient way to shop. So if you are looking for a fresh alternative to milk or a spicy organic steak, we are your first and right choice.</center></p>
+</div>
+
+<div class="row no-gutters d-flex justify-content-center mt-3"  style="font-size:12px !important;">
+<p><i class="fa fa-map-marker" aria-hidden="true" style="margin-right:5px !important;"></i>CoronaV 2020 Bangalore, India</p>
+</div>
+
+<div class="row no-gutters d-flex justify-content-center"  style="font-size:12px !important;">
+<i class="fa fa-phone" aria-hidden="true" style="margin-right:5px !important;"></i><a href="tel:+91 725-9601-274" class="loc-link">7259601274</a>
+
+</div>
+
+<div class="row no-gutters d-flex justify-content-center mt-1"  style="font-size:12px !important;">
+<i class="fa fa-envelope" aria-hidden="true" style="margin-right:5px !important;"></i><a href="mailto:sairinraychoudhury@gmail" class="loc-link">sairinraychoudhury@gmail.com</a>
+</div>
+
+</div>
+
+
+<!-- Footer -->
+<footer class="page-footer font-small pt-4 d-lg-none">
+
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left">
+
+    <!-- Footer links -->
+    <div class="row text-center text-md-left mt-3 pb-3">
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3">
+        <a href="terms_and_conditions_of_use.html" class="footer-links-col1"><h6 class="text-uppercase mb-4 font-weight-bold">TERMS AND CONDITIONS OF USE</h6></a>
+        <a href="about_us.html" class="footer-links-col1"><h6 class="text-uppercase mb-4 font-weight-bold">ABOUT US</h6></a>
+        <a href="secure_payment.html" class="footer-links-col1"><h6 class="text-uppercase mb-4 font-weight-bold">SECURE PAYMENT</h6></a>
+        <a href="faqs.html" class="footer-links-col1"><h6 class="text-uppercase mb-4 font-weight-bold">FAQS</h6></a>
+        <a href="new_product.html" class="footer-links-col1"><h6 class="text-uppercase mb-4 font-weight-bold">NEW PRODUCTS</h6></a>
+        <a href="contact_us.html" class="footer-links-col1"><h6 class="text-uppercase mb-4 font-weight-bold">CONTACT US</h6></a>
+        <a href="blog.html" class="footer-links-col1"><h6 class="text-uppercase mb-4 font-weight-bold">BLOG</h6></a>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="w-100 clearfix d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+        <h6 class="text-uppercase mb-4 font-weight-bold"><a class="footer-links-col1" href="personal_info.html">PERSONAL INFO</a></h6>
+         <p>
+          <h6 class="text-uppercase mb-4 font-weight-bold">  <a class="footer-links-col1" href="orders.html">ORDERS</a></h6>
+         </p>
+         <p>
+           <h6 class="text-uppercase mb-4 font-weight-bold"> <a class="footer-links-col1" href="credit_slips.html">CREDIT SLIPS</a></h6>
+         </p>
+         <p>
+           <h6 class="text-uppercase mb-4 font-weight-bold"> <a class="footer-links-col1" href="addresses.html">ADDRESSES</a></h6>
+         </p>
+         <p>
+           <h6 class="text-uppercase mb-4 font-weight-bold"> <a class="footer-links-col1" href="my_wishlist.html">MY WISHLISTS</a></h6>
+         </p>
+      </div>
+      <!-- Grid column -->
+
+
+
+      <!-- Grid column -->
+      <hr class="w-100 clearfix d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-5 col-lg-5 col-xl-5 mx-auto mt-3">
+
+        <p>
+        <h6>  <i class="fa fa-check-square fa-2x" aria-hidden="true" style="margin-right:5%; color:#19B3BD;"></i><a class="footer-links-col1" href="#!">100% QUALITY GUARANTEE</a></p></h6>
+        <p style="font-size:12px; color:#B2A7A7; margin-left:20px;">No MOQ</p>
+
+          <p>
+        <h6>  <i class="fa fa-car fa-2x" aria-hidden="true" style="margin-right:5%; color:#19B3BD;"></i><a class="footer-links-col1" href="#!">FREE DELIVERY</a></p></h6>
+        <p style="font-size:12px; color:#B2A7A7;  margin-left:20px;">Free delivery on orders of Rs2000/- and more.</p>
+
+		<h6>  <i class="fa fa-headphones fa-2x" aria-hidden="true" style="margin-right:5%; color:#19B3BD;"></i><a class="footer-links-col1" href="#!">+91 7259601274</a></p></h6>
+        <p style="font-size:12px; color:#B2A7A7;  margin-left:20px;">Round-the-clock free hotline (24/7)</p>
+
+</div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Footer links -->
+
+    <hr>
+
+    <!-- Grid row -->
+    <div class="row d-flex align-items-center">
+
+      <!-- Grid column -->
+      <div class="col-md-7 col-lg-8">
+
+        <!--Copyright-->
+        <p class="text-center text-md-left" style="font-size:12px; color:#B9C5D5;">© 2020 Copyright:
+          <a href="#" style="font-size:12px; color:#B9C5D5;">
+           e-commerce CoronaV
+          </a>
+        </p>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+</footer>
+<!-- Footer -->
+
+<!-- Footer -->
+<footer class="page-footer font-small mdb-color pt-4 d-none d-lg-block" style="background-color:#B8EBEF; max-width:100%; max-height:100%;">
+
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left">
+
+    <!-- Footer links -->
+    <div class="row text-center text-md-left mt-3 pb-3">
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+       <img src="https://ld-prestashop.template-help.com/prestashop_eze_567_tf_v2/img/covid-logo-1585572698.jpg" alt="CoronaV"/>
+ <p ID="desk-col1">The mission of our store is to: provide all the necessary products needed exclusively during COVID-19 with easy.  We want to make vegan the new normal by providing an easy and convenient way to shop. So if you are looking for a fresh alternative to milk or a spicy organic steak, we are your first and right choice.</p>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="w-100 clearfix d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+
+        <a href="terms_and_conditions_of_use.html" class="footer-links-col1"><h6 class="text-uppercase mb-4 font-weight-bold">TERMS AND CONDITIONS OF USE</h6></a>
+        <a href="about_us.html" class="footer-links-col1"><h6 class="text-uppercase mb-4 font-weight-bold">ABOUT US</h6></a>
+        <a href="secure_payment.html" class="footer-links-col1"><h6 class="text-uppercase mb-4 font-weight-bold">SECURE PAYMENT</h6></a>
+        <a href="faqs.html" class="footer-links-col1"><h6 class="text-uppercase mb-4 font-weight-bold">FAQS</h6></a>
+        <a href="new_product.html" class="footer-links-col1"><h6 class="text-uppercase mb-4 font-weight-bold">NEW PRODUCTS</h6></a>
+        <a href="contact_us.html" class="footer-links-col1"><h6 class="text-uppercase mb-4 font-weight-bold">CONTACT US</h6></a>
+        <a href="blog.html" class="footer-links-col1"><h6 class="text-uppercase mb-4 font-weight-bold">BLOG</h6></a>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="w-100 clearfix d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+        <h6 class="text-uppercase mb-4 font-weight-bold"><a class="footer-links-col1" href="personal_info.html">PERSONAL INFO</a></h6>
+         <p>
+          <h6 class="text-uppercase mb-4 font-weight-bold">  <a class="footer-links-col1" href="orders.html">ORDERS</a></h6>
+         </p>
+         <p>
+           <h6 class="text-uppercase mb-4 font-weight-bold"> <a class="footer-links-col1" href="credit_slips.html">CREDIT SLIPS</a></h6>
+         </p>
+         <p>
+           <h6 class="text-uppercase mb-4 font-weight-bold"> <a class="footer-links-col1" href="addresses.html">ADDRESSES</a></h6>
+         </p>
+         <p>
+           <h6 class="text-uppercase mb-4 font-weight-bold"> <a class="footer-links-col1" href="my_wishlist.html">MY WISHLISTS</a></h6>
+         </p>
+      </div>
+
+      <!-- Grid column -->
+      <hr class="w-100 clearfix d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3" >
+         <p>
+        <h6>  <i class="fa fa-check-square fa-2x" aria-hidden="true" style="margin-right:5%; color:#19B3BD;"></i><a class="footer-links-col1" href="#!">100% QUALITY GUARANTEE</a></p></h6>
+        <p style="font-size:12px; color:#B2A7A7; margin-left:20px;">No MOQ</p>
+
+          <p>
+        <h6>  <i class="fa fa-car fa-2x" aria-hidden="true" style="margin-right:5%; color:#19B3BD;"></i><a class="footer-links-col1" href="#!">FREE DELIVERY</a></p></h6>
+        <p style="font-size:12px; color:#B2A7A7;  margin-left:20px;">Free delivery on orders of Rs2000/- and more.</p>
+
+		<h6>  <i class="fa fa-headphones fa-2x" aria-hidden="true" style="margin-right:5%; color:#19B3BD;"></i><a class="footer-links-col1" href="tel:+91 725-9601-274">+91 7259601274</a></p></h6>
+        <p style="font-size:12px; color:#B2A7A7;  margin-left:20px;">Round-the-clock free hotline (24/7)</p>
+         </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Footer links -->
+
+    <hr>
+
+    <!-- Grid row -->
+    <div class="row d-flex align-items-center">
+
+      <!-- Grid column -->
+      <div class="col-md-7 col-lg-8">
+
+        <p class="text-center text-md-left" style="font-size:12px; color:grey;">© 2020 Copyright:
+          <a href="#" style="font-size:12px; color:grey;">
+           e-commerce CoronaV
+          </a>
+        </p>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+</footer>
+<!-- Footer -->
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+<script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+		</script>
+
+ <script type="text/javascript">
+  var $mediaElements = $(".cd-item");
+$(".filter_link").click(function(e) {
+  e.preventDefault();
+  var filterVal = $(this).data("filter");
+  if (filterVal === "all") {
+    $mediaElements.slideDown("slow");
+  } else {
+    $mediaElements
+      .hide("slow")
+      .filter("." + filterVal)
+      .slideDown("slow");
+  }
+});
+function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+            {pageLanguage: 'en'},
+            'google_translate_element'
+        );
+    }
+
+//filter products
+  </script>
+</body>
+
+</html>

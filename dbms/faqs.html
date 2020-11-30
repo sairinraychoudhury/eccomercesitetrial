@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>FAQs</title>
+
+
+  <!-- Bootstrap CSS -->
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+  <link rel="icon" href="https://ld-prestashop.template-help.com/prestashop_eze_567_tf_v2/img/favicon.ico?1585572698" rel="icon" type="image/vnd.microsoft.icon">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+
+  <style media="screen">
+
+
+    /*navbar*/
+    body {
+      position: relative;
+      padding: 0;
+    }
+
+    #topbar {
+      height: 80px;
+      background-color: #FFFFFF;
+      width: 100%;
+    }
+
+    #brandName {
+      padding: 2% 5% 2% 3%;
+      cursor: pointer;
+    }
+
+    #jxsearchbox-blog {
+      width: 30%;
+      margin-top: 2% !important;
+
+    }
+
+    .topbar-options {
+      float: left;
+    }
+
+    .custom-select {
+      border-radius: 50px;
+      border-right: none;
+      height: 50px;
+      z-index: 1;
+      font-size: 12px;
+      padding-left: 5%;
+
+    }
+
+    .jx_blog_search_query {
+      border-radius: 50px;
+      border-left: none !important;
+      height: 50px;
+      margin-left: -30px;
+      padding-left: 30px;
+      font-size: 12px;
+      width: 140% !important;
+    }
+
+    .jx_blog_search_query:focus {
+
+      outline: none !important;
+      /* Remove default outline and use border or box-shadow */
+      box-shadow: 0 0 0 0 #CED4DA;
+      border-color: #CED4DA;
+    }
+
+    .custom-select:focus {
+      outline: none !important;
+      /* Remove default outline and use border or box-shadow */
+      box-shadow: 0 0 0 0 #CED4DA;
+      border-color: #CED4DA;
+    }
+
+    textarea:focus,
+    input:focus {
+      outline: none;
+    }
+
+    #mag {
+      float: left;
+      margin-top: -40px;
+      margin-left: 150px;
+    }
+
+    .fa-search {
+      color: #19B3BD;
+    }
+
+    .fa-search:hover {
+      color: black;
+    }
+
+    #language-selector {
+      margin-top: 2% !important;
+      float: right;
+      margin-right: 3% !important;
+    }
+
+    #setting {
+      float: right;
+      margin-top: 2%;
+    }
+
+    .fa-cog {
+      color: #19B3BD;
+    }
+
+    .fa-cog:hover {
+      color: black;
+    }
+
+    #heart {
+      float: right;
+      margin-top: 2%;
+      margin-left: 3%;
+    }
+
+    .fa-heart-o {
+      color: #19B3BD;
+    }
+
+    .fa-heart-o:hover {
+      color: black;
+    }
+
+    #user {
+      float: right;
+      margin-top: 2%;
+      margin-left: 3%;
+    }
+
+    .fa-user-o {
+      color: #19B3BD;
+    }
+
+    .fa-user-o:hover {
+      color: black;
+    }
+
+    .fa {
+      font-size: 1.3em !important;/size whatever you like/
+    }
+
+    #shoppingKart {
+      float: right;
+      margin-top: 2%;
+      margin-left: 3%;
+      margin-right: 4%;
+    }
+
+    .fa-shopping-cart {
+      color: #19B3BD;
+    }
+
+    .fa-shopping-cart:hover {
+      color: black;
+    }
+
+    #topMenu {
+      margin-top: -22px;
+      display: inline-block;
+      height: 50px;
+      background-color: #ffffff;
+      width: 100%;
+      float: left !important;
+      margin-bottom: 1%;
+      border-bottom: 1px solid #E5E5E5;
+    }
+
+    .menuitems {
+      margin-top: 2%;
+      float: left !important;
+      margin-left: 3%;
+      margin-top: 15px !important;
+    }
+
+    .menulinks {
+      color: black;
+      font-weight: 500;
+
+    }
+
+    .menulinks:hover {
+      text-decoration: none;
+      color: #52C6CE !important;
+    }
+
+    #home-ref {
+      color: black;
+    }
+
+    #home-ref:hover {
+      color:#52C6CE;
+      text-decoration: none;
+    }
+
+
+
+    * {
+      box-sizing: border-box;
+    }
+
+
+    /* /footer/ */
+    .contact-info {
+      margin-top: 7%;
+      background-color: #19B3BD;
+      max-height: 100%;
+    }
+
+    #mailing-list {
+      color: #ffffff;
+      font-weight: 650;
+      padding-left: 5%;
+      padding-top: 5%;
+      margin-bottom: 5%;
+    }
+
+    .mailing-list {
+      color: #ffffff;
+      padding-left: 10%;
+    }
+
+    .input-group-mail {
+      border-radius: 50px 0px 0px 50px !important;
+      width: 50%;
+      height: 50px;
+      margin-left: 3%;
+      margin-left: 6%;
+    }
+
+    .btn-white {
+      background-color: #FFFFFF;
+      margin-left: -9px;
+      height: 50px;
+      border-radius: 0px 50px 50px 0px !important;
+      color: #19B3BD;
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+
+    .input-group-mail:focus {
+      outline: none !important;
+      /* Remove default outline and use border or box-shadow */
+      box-shadow: 0 0 0 0 #CED4DA;
+      border-color: #ffffff;
+    }
+
+    .btn-white:focus {
+      outline: none !important;
+      /* Remove default outline and use border or box-shadow */
+      box-shadow: 0 0 0 0 #CED4DA;
+      border-color: #ffffff;
+    }
+
+    .btn-white:hover {
+      color: #19B3BD;
+      background-color: #E6E6E6;
+    }
+
+    .icon {
+      margin-left: 5%;
+      font-size: 1.3em;
+      width: 2em;
+      text-align: center;
+      line-height: 1.8em;
+      border: 2px solid #bee8ea;
+      color: #fff;
+      border-radius: 1em;
+      margin-bottom: 5%;
+    }
+
+    .icon:hover {
+      border: 2px solid #fff;
+    }
+
+    .icon1 {
+      color: #fff;
+      border: 4px solid #bee8ea;
+      border-radius: 50%;
+      padding: 15% !important;
+      margin-left: 7%;
+    }
+
+    .icn {
+      margin-left: -20px;
+    }
+
+    .icon1:hover {
+      border: 4px solid #fff;
+    }
+
+    .loc-link:hover {
+      text-decoration: none;
+    }
+
+    .footer-links-col1 {
+      color: #242424;
+    }
+
+    .footer-links-col1:hover {
+      text-decoration: none;
+      color: #6FB5BD;
+    }
+
+    #desk-col1 {
+      margin-top: 13px;
+      font-size: 12px;
+      text-align: justify;
+      text-justify: inter-word;
+    }
+
+    .slide1Pic {
+      color: #fff;
+      font-weight: 500;
+    }
+
+    .slide2Pic {
+      color: #19B3BD;
+      font-weight: 500;
+    }
+
+    .slide3Pic {
+      color: #19B3BD;
+      font-weight: 500;
+    }
+
+    #prod-description {
+      text-decoration: none;
+      color: black;
+    }
+
+    #prod-description:hover {
+      color: #19B3BD;
+    }
+
+    .path {
+      padding-left: 3%;
+      padding-top: 2rem;
+      text-decoration: none;
+      color: black;
+      font-size: 0.8rem;
+    }
+
+    .path:hover {
+      color: #19B3BD;
+      text-decoration: none;
+    }
+
+    .pathspan {
+      padding-top: 2rem;
+      text-decoration: none;
+      color: black;
+      font-size: 0.8rem;
+    }
+    .heading{
+      margin-bottom:2rem;
+      margin-top:2.5rem;
+    }
+    .hea {
+      padding-left: 3%;
+      margin-bottom:4rem;
+    }
+    .sec{
+      padding-bottom:2rem;
+        padding-left: 3%;
+    }
+    p{
+      font-weight: normal;
+    }
+    .faqs{
+      padding-left: 3%;
+    }
+  </style>
+</head>
+
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light d-md-none d-lg-none">
+    <a class="navbar-brand" href="#">
+      <img src="https://ld-prestashop.template-help.com/prestashop_eze_567_tf_v2/img/covid-logo-1585572698.jpg" alt="brand name" />
+
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="homecorona.html">HOME <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="home_medicine.html">HOME MEDICINE</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="personal_care.html">PERSONAL CARE</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="health_library.html"> HEALTH LIBRARY</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="pharmacy.html"> PHARMACY</a>
+        </li>
+
+      </ul>
+    </div>
+  </nav>
+
+  <div id="topbar">
+
+
+    <div id="brandName" class="topbar-options d-md-block d-none">
+      <img src="https://ld-prestashop.template-help.com/prestashop_eze_567_tf_v2/img/covid-logo-1585572698.jpg" alt="brand name" />
+    </div>
+
+
+
+    <div id="jxsearchbox-blog" class="topbar-options d-none d-lg-block" class="tab-pane  " role="tabpanel" aria-labelledby="blog-tab">
+      <form method="get" action="https://ld-prestashop.template-help.com/prestashop_eze_567_tf_v2/index.php?fc=module&amp;module=jxblog&amp;controller=search&amp;id_lang=1">
+
+        <!-- SQL  REQUIRED-->
+
+        <div class="input-group">
+          <select name="search_blog_categories" class="custom-select">
+            <option value="0">Blog Categories</option>
+            <option value="2">Home</option>
+            <option value="3">-ECommerce Template</option>
+            <option value="4">-PrestaShop modules</option>
+          </select>
+
+          <!-- SQL  REQUIRED-->
+
+          <div id="search-1">
+            <input class="jx_blog_search_query form-control" type="text" id="jx_blog_search_query" name="blog_search_query" placeholder="Search through the blog..." value="" />
+            <div id="mag"><i class="fa fa-search" aria-hidden="true"></i></div>
+          </div>
+
+        </div>
+      </form>
+    </div>
+
+    <div id="shoppingKart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></div>
+
+    <div id="user"><i class="fa fa-user-o" aria-hidden="true"></i></div>
+
+    <div id="heart"><i class="fa fa-heart-o " aria-hidden="true"></i></div>
+
+    <div id="setting"><i class="fa fa-cog " aria-hidden="true"></i></div>
+
+
+
+    <div id="language-selector" style="">
+      <div id="google_translate_element"></div>
+    </div>
+
+
+  </div>
+
+
+
+  <div id="topMenu" class="d-none d-lg-block">
+
+    <div class="menuitems">
+      <a class="menulinks" href="home_medicine.html"> HOME MEDICINE</a>
+    </div>
+
+
+    <div class="menuitems">
+      <a class="menulinks" href="personal_care.html"> PERSONAL CARE</a>
+    </div>
+
+
+
+    <div class="menuitems">
+      <a class="menulinks" href="health_library.html"> HEALTH LIBRARY</a>
+    </div>
+
+    <div class="menuitems">
+      <a class="menulinks" href="pharmacy.html"> PHARMACY</a>
+    </div>
+
+
+  </div>
+
+
+  <span class="pathspan"><a href="homecorona.html" class="path">Home</a> >FAQs</span>
+
+  <div class="contain">
+
+    <h1 class="heading text-center">FAQS</h1>
+    <p class="hea text-center">If you need help, we have a list of frequently asked questions and answers. We strive to give you the best buying experience possible. Click a question below to view the answer.</p>
+
+  </div>
+
+  <div class="faqs">
+
+
+  <div class="sec">
+    <h4 class="subheading" data-toggle="collapse" href="#collapseExample1" aria-expanded="false" aria-controls="collapseExample"><i class="fa fa-plus-circle fa-lg"></i> How can I change something in my order?</h4>
+    <div class="collapse" id="collapseExample1">
+      <p>If you need to change something your order, please contact us immediately. We usually process orders within 2-4 hours, and once we have processed your order, we will be unable to make any changes.</p>
+      <ul>
+        <b><li>Change order</li>
+        <li>Cancel order online</li>
+        <li>Cancel order using automated system</li>
+        <li>Unable to cancel order</li></b>
+      </ul>
+
+    </div>
+  </div>
+
+  <div class="sec">
+    <h4 class="subheading" data-toggle="collapse" href="#collapseExample2" aria-expanded="false" aria-controls="collapseExample"><i class="fa fa-plus-circle fa-lg"></i>  How can I pay for my order?</h4>
+    <div class="collapse" id="collapseExample2">
+      <p>We accept Visa, MasterCard, and American Express credit and debit cards for your convenience.</p>
+    </div>
+  </div>
+
+  <div class="sec">
+    <h4 class="subheading" data-toggle="collapse" href="#collapseExample3" aria-expanded="false" aria-controls="collapseExample"><i class="fa fa-plus-circle fa-lg"></i>  Can I track my order?</h4>
+    <div class="collapse" id="collapseExample3">
+      <p>Yes, you can! After placing your order you will receive an order confirmation via email. Each order starts production 24 hours after your order is placed. Within 72 hours of you placing your order, you will receive an expected delivery date.
+        When the order ships, you will receive another email with the tracking number and a link to trace the order online with the carrier.
+      </p>
+    </div>
+  </div>
+
+  <div class="sec">
+    <h4 class="subheading" data-toggle="collapse" href="#collapseExample4" aria-expanded="false" aria-controls="collapseExample"><i class="fa fa-plus-circle fa-lg"></i>  Can I return an item?</h4>
+    <div class="collapse" id="collapseExample4">
+      <p>Please visit our Returns & Exchanges page for more information.</p>
+    </div>
+  </div>
+
+  <div class="sec">
+    <h4 class="subheading" data-toggle="collapse" href="#collapseExample5" aria-expanded="false" aria-controls="collapseExample"><i class="fa fa-plus-circle fa-lg"></i>  How long will my order take to be delivered?</h4>
+    <div class="collapse" id="collapseExample5">
+      <p>Delivery times will depend on your location. Once payment is confirmed your order will be packaged. Delivery can be expected within 10 business days.</p>
+    </div>
+  </div>
+
+  <div class="sec">
+    <h4 class="subheading" data-toggle="collapse" href="#collapseExample6" aria-expanded="false" aria-controls="collapseExample"><i class="fa fa-plus-circle fa-lg"></i>  Do I need an account and what are the benefits?</h4>
+    <div class="collapse" id="collapseExample6">
+      <p>It's not required to create an account. But, having an account provides easier checkout, the ability to create and send a wishlist, and a customized shopping experience.
+      </p>
+    </div>
+  </div>
+  </div>
+
+
+
+
+  <!-- ...............................................................footer -->
+ 
+<div class="container-flex">
+<div class="contact-info">
+
+<div class="row no-gutters">
+<div class="col-md-6 col-lg-6">
+<h3 id="mailing-list">JOIN OUR MAILING LIST</H3>
+</div>
+</div>
+
+<div class="row no-gutters">
+
+<div class="col-md-6 col-lg-2">
+<p class="mailing-list">You may unsubscribe at any moment. For that purpose, please find our contact info in the legal notice.</p>
+</div>
+
+
+<div class="col-12 col-md-6 mt-3 col-lg-5 mt-md-0">
+        <form action="" method="post">
+
+		 <!-- SQL  REQUIRED-->
+
+      <div class="input-group input-group-mail">
+        <input
+                class="form-control input-group-mail"
+                name="email"
+                type="email"
+                value=""
+                placeholder="Your e-mail"
+                aria-labelledby="block-newsletter-label"
+        >
+        <input type="hidden" name="action" value="0">
+
+        <div class="input-group-append">  <!-- SQL  REQUIRED-->
+          <input
+                  class="btn btn-white"
+                  name="submitNewsletter"
+                  type="submit"
+                  value="Subscribe"
+          >
+        </div>
+      </div>
+
+          </form>
+  </div>
+
+
+
+<div class="col-lg-1 d-none d-lg-block icn" id="facebook"><i class="fa icon1 fa-facebook" aria-hidden="true"></i></div>
+<div class="col-lg-1 d-none d-lg-block icn" id="twitter"><i class="fa icon1 fa-twitter" aria-hidden="true"></i></div>
+<div class="col-lg-1 d-none d-lg-block icn" id="youtube"><i class="fa icon1 fa-youtube" aria-hidden="true"></i></div>
+<div class="col-lg-1 d-none d-lg-block icn" id="googleplus"><i class="fa icon1 fa-google-plus" aria-hidden="true"></i></div>
+<div class="col-lg-1 d-none d-lg-block icn" id="instagram"><i class="fa icon1 fa-instagram" aria-hidden="true"></i></div>
+
+
+
+</div>
+
+<div class="row no-gutters d-flex justify-content-center mt-5 d-lg-none">
+
+<div class="column icon" id="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+<div class="column icon" id="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></div>
+<div class="column icon" id="youtube"><i class="fa fa-youtube" aria-hidden="true"></i></div>
+<div class="column icon" id="googleplus"><i class="fa fa-google-plus" aria-hidden="true"></i></div>
+<div class="column icon" id="instagram"><i class="fa fa fa-instagram" aria-hidden="true"></i></div>
+
+</div>
+</div>
+</div>
+
+<div class="container d-lg-none">
+
+<div class="row no-gutters d-flex justify-content-center mt-5">
+<img src="https://ld-prestashop.template-help.com/prestashop_eze_567_tf_v2/img/covid-logo-1585572698.jpg" alt="CoronaV"/>
+</div>
+
+<div class="row no-gutters d-flex justify-content-center mt-3"  style="font-size:12px !important;">
+<p><center>The mission of our store is to: provide all the necessary products needed exclusively during COVID-19 with easy.  We want to make vegan the new normal by providing an easy and convenient way to shop. So if you are looking for a fresh alternative to milk or a spicy organic steak, we are your first and right choice.</center></p>
+</div>
+
+<div class="row no-gutters d-flex justify-content-center mt-3"  style="font-size:12px !important;">
+<p><i class="fa fa-map-marker" aria-hidden="true" style="margin-right:5px !important;"></i>CoronaV 2020 Bangalore, India</p>
+</div>
+
+<div class="row no-gutters d-flex justify-content-center"  style="font-size:12px !important;">
+<i class="fa fa-phone" aria-hidden="true" style="margin-right:5px !important;"></i><a href="tel:+91 725-9601-274" class="loc-link">7259601274</a>
+
+</div>
+
+<div class="row no-gutters d-flex justify-content-center mt-1"  style="font-size:12px !important;">
+<i class="fa fa-envelope" aria-hidden="true" style="margin-right:5px !important;"></i><a href="mailto:sairinraychoudhury@gmail" class="loc-link">sairinraychoudhury@gmail.com</a>
+</div>
+
+</div>
+
+
+<!-- Footer -->
+<footer class="page-footer font-small pt-4 d-lg-none">
+
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left">
+
+    <!-- Footer links -->
+    <div class="row text-center text-md-left mt-3 pb-3">
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3">
+        <a href="terms_and_conditions_of_use.html" class="footer-links-col1"><h6 class="text-uppercase mb-4 font-weight-bold">TERMS AND CONDITIONS OF USE</h6></a>
+        <a href="about_us.html" class="footer-links-col1"><h6 class="text-uppercase mb-4 font-weight-bold">ABOUT US</h6></a>
+        <a href="secure_payment.html" class="footer-links-col1"><h6 class="text-uppercase mb-4 font-weight-bold">SECURE PAYMENT</h6></a>
+        <a href="faqs.html" class="footer-links-col1"><h6 class="text-uppercase mb-4 font-weight-bold">FAQS</h6></a>
+        <a href="new_products.html" class="footer-links-col1"><h6 class="text-uppercase mb-4 font-weight-bold">NEW PRODUCTS</h6></a>
+        <a href="contact_us.html" class="footer-links-col1"><h6 class="text-uppercase mb-4 font-weight-bold">CONTACT US</h6></a>
+        <a href="blog.html" class="footer-links-col1"><h6 class="text-uppercase mb-4 font-weight-bold">BLOG</h6></a>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="w-100 clearfix d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+        <h6 class="text-uppercase mb-4 font-weight-bold"><a class="footer-links-col1" href="personal_info.html">PERSONAL INFO</a></h6>
+        <p>
+         <h6 class="text-uppercase mb-4 font-weight-bold">  <a class="footer-links-col1" href="orders.html">ORDERS</a></h6>
+        </p>
+        <p>
+          <h6 class="text-uppercase mb-4 font-weight-bold"> <a class="footer-links-col1" href="credit_slips.html">CREDIT SLIPS</a></h6>
+        </p>
+        <p>
+          <h6 class="text-uppercase mb-4 font-weight-bold"> <a class="footer-links-col1" href="addresses.html">ADDRESSES</a></h6>
+        </p>
+        <p>
+          <h6 class="text-uppercase mb-4 font-weight-bold"> <a class="footer-links-col1" href="my_wishlists.html">MY WISHLISTS</a></h6>
+        </p>
+      </div>
+      <!-- Grid column -->
+
+
+
+      <!-- Grid column -->
+      <hr class="w-100 clearfix d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-5 col-lg-5 col-xl-5 mx-auto mt-3">
+
+        <p>
+        <h6>  <i class="fa fa-check-square fa-2x" aria-hidden="true" style="margin-right:5%; color:#19B3BD;"></i><a class="footer-links-col1" href="100%_quality_guarantee.html">100% QUALITY GUARANTEE</a></p></h6>
+        <p style="font-size:12px; color:#B2A7A7; margin-left:20px;">No MOQ</p>
+
+          <p>
+        <h6>  <i class="fa fa-car fa-2x" aria-hidden="true" style="margin-right:5%; color:#19B3BD;"></i><a class="footer-links-col1" href="free_delivery.html">FREE DELIVERY</a></p></h6>
+        <p style="font-size:12px; color:#B2A7A7;  margin-left:20px;">Free delivery on orders of Rs2000/- and more.</p>
+
+		<h6>  <i class="fa fa-headphones fa-2x" aria-hidden="true" style="margin-right:5%; color:#19B3BD;"></i><a class="footer-links-col1" href="tel:+91 725-9601-274">+91 7259601274</a></p></h6>
+        <p style="font-size:12px; color:#B2A7A7;  margin-left:20px;">Round-the-clock free hotline (24/7)</p>
+
+</div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Footer links -->
+
+    <hr>
+
+    <!-- Grid row -->
+    <div class="row d-flex align-items-center">
+
+      <!-- Grid column -->
+      <div class="col-md-7 col-lg-8">
+
+        <!--Copyright-->
+        <p class="text-center text-md-left" style="font-size:12px; color:#B9C5D5;">© 2020 Copyright:
+          <a href="#" style="font-size:12px; color:#B9C5D5;">
+           e-commerce CoronaV
+          </a>
+        </p>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+</footer>
+<!-- Footer -->
+
+<!-- Footer -->
+<footer class="page-footer font-small mdb-color pt-4 d-none d-lg-block" style="background-color:#B8EBEF; max-width:100%; max-height:100%;">
+
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left">
+
+    <!-- Footer links -->
+    <div class="row text-center text-md-left mt-3 pb-3">
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+       <img src="https://ld-prestashop.template-help.com/prestashop_eze_567_tf_v2/img/covid-logo-1585572698.jpg" alt="CoronaV"/>
+ <p ID="desk-col1">The mission of our store is to: provide all the necessary products needed exclusively during COVID-19 with easy.  We want to make vegan the new normal by providing an easy and convenient way to shop. So if you are looking for a fresh alternative to milk or a spicy organic steak, we are your first and right choice.</p>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="w-100 clearfix d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+
+        <a href="terms_and_conditions_of_use.html" class="footer-links-col1"><h6 class="text-uppercase mb-4 font-weight-bold">TERMS AND CONDITIONS OF USE</h6></a>
+        <a href="about_us.html" class="footer-links-col1"><h6 class="text-uppercase mb-4 font-weight-bold">ABOUT US</h6></a>
+        <a href="secure_payment.html" class="footer-links-col1"><h6 class="text-uppercase mb-4 font-weight-bold">SECURE PAYMENT</h6></a>
+        <a href="faqs.html" class="footer-links-col1"><h6 class="text-uppercase mb-4 font-weight-bold">FAQS</h6></a>
+        <a href="new_products.html" class="footer-links-col1"><h6 class="text-uppercase mb-4 font-weight-bold">NEW PRODUCTS</h6></a>
+        <a href="contact_us.html" class="footer-links-col1"><h6 class="text-uppercase mb-4 font-weight-bold">CONTACT US</h6></a>
+        <a href="blog.html" class="footer-links-col1"><h6 class="text-uppercase mb-4 font-weight-bold">BLOG</h6></a>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="w-100 clearfix d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+       <h6 class="text-uppercase mb-4 font-weight-bold"><a class="footer-links-col1" href="personal_info.html">PERSONAL INFO</a></h6>
+        <p>
+         <h6 class="text-uppercase mb-4 font-weight-bold">  <a class="footer-links-col1" href="orders.html">ORDERS</a></h6>
+        </p>
+        <p>
+          <h6 class="text-uppercase mb-4 font-weight-bold"> <a class="footer-links-col1" href="credit_slips.html">CREDIT SLIPS</a></h6>
+        </p>
+        <p>
+          <h6 class="text-uppercase mb-4 font-weight-bold"> <a class="footer-links-col1" href="addresses.html">ADDRESSES</a></h6>
+        </p>
+        <p>
+          <h6 class="text-uppercase mb-4 font-weight-bold"> <a class="footer-links-col1" href="my_wishlists.html">MY WISHLISTS</a></h6>
+        </p>
+      </div>
+
+      <!-- Grid column -->
+      <hr class="w-100 clearfix d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3" >
+         <p>
+        <h6>  <i class="fa fa-check-square fa-2x" aria-hidden="true" style="margin-right:5%; color:#19B3BD;"></i><a class="footer-links-col1" href="100%_quality_guarantee.html">100% QUALITY GUARANTEE</a></p></h6>
+        <p style="font-size:12px; color:#B2A7A7; margin-left:20px;">No MOQ</p>
+
+          <p>
+        <h6>  <i class="fa fa-car fa-2x" aria-hidden="true" style="margin-right:5%; color:#19B3BD;"></i><a class="footer-links-col1" href="free_delivery.html">FREE DELIVERY</a></p></h6>
+        <p style="font-size:12px; color:#B2A7A7;  margin-left:20px;">Free delivery on orders of Rs2000/- and more.</p>
+
+		<h6>  <i class="fa fa-headphones fa-2x" aria-hidden="true" style="margin-right:5%; color:#19B3BD;"></i><a class="footer-links-col1" href="tel:+91 725-9601-274">+91 7259601274</a></p></h6>
+        <p style="font-size:12px; color:#B2A7A7;  margin-left:20px;">Round-the-clock free hotline (24/7)</p>
+         </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Footer links -->
+
+    <hr>
+
+    <!-- Grid row -->
+    <div class="row d-flex align-items-center">
+
+      <!-- Grid column -->
+      <div class="col-md-7 col-lg-8">
+
+        <p class="text-center text-md-left" style="font-size:12px; color:grey;">© 2020 Copyright:
+          <a href="#" style="font-size:12px; color:grey;">
+           e-commerce CoronaV
+          </a>
+        </p>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+</footer>
+  <!-- Footer -->
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  <script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({
+          pageLanguage: 'en'
+        },
+        'google_translate_element'
+      );
+    }
+
+    var slideIndex = 1;
+  </script>
+
+
+</body>
+
+</html>
